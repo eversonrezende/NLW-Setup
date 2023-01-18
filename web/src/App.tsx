@@ -1,13 +1,16 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import './styles/global.css';
+
 import { Habit } from './components/Habit'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <Habit completed={3}/>
+    <div>
+      <Habit completed={3}/>
+      <Habit completed={4}/>
+      <Habit completed={5}/>
+      <Habit completed={6}/>
+      <Habit completed={7}/>
+    </div>
   )
 }
 
